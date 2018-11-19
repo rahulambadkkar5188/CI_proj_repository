@@ -26,7 +26,7 @@ $this->load->view('admin/header');
             <div class="form-group">
               <div class="form-label-group">
                 <input type="file" id="file" name="uprofile" class="form-control" placeholder="Srelect Profile" required="required">
-                <label for="uprofile">Select Profile</label>
+                <label for="uprofile">Profile</label>
               </div>
             </div>
             <div class="form-group">

@@ -47,7 +47,7 @@
       <!-- Sidebar -->
       <ul class="sidebar navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link" href="<?php echo base_url('index.php/admin/admin/');?>">
+          <a class="nav-link" href="<?php echo base_url();?>">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Dashboard</span>
           </a>
@@ -75,10 +75,23 @@
       ?>
 
       <li class="nav-item">
-          <a class="nav-link" href="charts.html">
-            <i class="fas fa-fw fa-chart-area"></i>
+          <a class="nav-link" href="<?php echo base_url('index.php/admin/admin/password');?>">
+            <i class="fas fa-fw fa-table"></i>
             <span>Change Password</span></a>
         </li>
+ <?php
+        if($this->session->userdata('userstatus')==2):
+      ?>
+
+        <li class="nav-item">
+          <a class="nav-link" href="<?php echo base_url('index.php/admin/admin/library');?>">
+            <i class="fas fa-fw fa-table"></i>
+            <span>Add Library</span></a>
+        </li>
+ <?php
+        endif;
+      ?>
+
         <li class="nav-item">
           <a class="nav-link" href="<?php echo base_url('index.php/admin/admin/logout');?>">
             <i class="fas fa-fw fa-table"></i>
